@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_length"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Convert CM into Feet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textAlignment="inherit"
+        android:id="@+id/lengthTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter the value"
+        android:ems="10"
+        android:id="@+id/convertEditText"
+        android:layout_below="@+id/lengthTextView"
+        android:layout_alignLeft="@+id/lengthTextView"
+        android:layout_alignStart="@+id/lengthTextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="52dp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/convertEditText"
+        android:layout_alignLeft="@+id/convertEditText"
+        android:layout_alignRight="@+id/convertEditText"
+        android:layout_marginStart="222dp"
+        android:layout_marginLeft="222dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="-117dp"
+        android:text="CM"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textSize="20dp"/>
+
+    <Button
+        android:text="Calculate"
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/convertEditText"
+        android:layout_marginRight="23dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="23dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textSize="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultTextView"
+        android:text="Result "
+        android:layout_below="@+id/calculateButton"
+        android:layout_alignLeft="@+id/lengthTextView"
+        android:layout_alignStart="@+id/lengthTextView"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="52dp"
+        android:textStyle="bold"
+        android:textColor="#070707"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/resultEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculateButton"
+        android:layout_alignStart="@+id/resultTextView"
+        android:layout_alignLeft="@+id/resultTextView"
+        android:layout_alignRight="@+id/resultTextView"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginRight="-239dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="      "
+        android:textColor="#070707"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/resultEditText"
+        android:layout_alignLeft="@+id/resultEditText"
+        android:layout_alignRight="@+id/resultEditText"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginRight="-29dp"
+        android:text="feet"
+        android:textColor="#070707"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
